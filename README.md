@@ -4,6 +4,14 @@
 
 To-Do app is designed to help users manage their tasks and activities effectively. It utilizes the sqflite package as a local database to store task-related information and employs the GetX package for efficient state management, navigation, and other UI-related functionalities.
 
+Linkedin link : https://www.linkedin.com/posts/patrick-nashaat-0474ba24a_flutterdevelopment-sqflite-statemanagement-activity-7098253124930351104-kh39?utm_source=share&utm_medium=member_desktop
+
+# Screenshots:
+![IMG_2460](https://github.com/patrick-3008/To-do-app/assets/121394398/c07f1a05-4f11-4363-8c3f-026f9a26f61f)
+![IMG_2461](https://github.com/patrick-3008/To-do-app/assets/121394398/b4105317-32a9-433f-ab1d-ee23a4ec46f4)
+![IMG_2462](https://github.com/patrick-3008/To-do-app/assets/121394398/bf76426e-ce09-4b8c-a685-5628c80a96f4)
+![IMG_2463](https://github.com/patrick-3008/To-do-app/assets/121394398/8d472048-5c5c-4eb5-b91a-32d6e4dab7e9)
+
 # Features:
 
 1. Task Creation: Users can add new tasks to their to-do list. The app provides an input field where users can enter the task title, description, due date, priority, and other relevant details.
