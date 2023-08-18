@@ -7,10 +7,10 @@ To-Do app is designed to help users manage their tasks and activities effectivel
 Linkedin link : https://www.linkedin.com/posts/patrick-nashaat-0474ba24a_flutterdevelopment-sqflite-statemanagement-activity-7098253124930351104-kh39?utm_source=share&utm_medium=member_desktop
 
 # Screenshots:
-![IMG_2460](https://github.com/patrick-3008/To-do-app/assets/121394398/c07f1a05-4f11-4363-8c3f-026f9a26f61f)
-![IMG_2461](https://github.com/patrick-3008/To-do-app/assets/121394398/b4105317-32a9-433f-ab1d-ee23a4ec46f4)
-![IMG_2462](https://github.com/patrick-3008/To-do-app/assets/121394398/bf76426e-ce09-4b8c-a685-5628c80a96f4)
-![IMG_2463](https://github.com/patrick-3008/To-do-app/assets/121394398/8d472048-5c5c-4eb5-b91a-32d6e4dab7e9)
+<img src="https://github.com/patrick-3008/To-do-app/assets/121394398/b8aaa309-2a20-4b5d-bb30-f797d52ff8b5" width="200">
+<img src="https://github.com/patrick-3008/To-do-app/assets/121394398/d86c8938-3df9-45d6-9919-5054d73b02f6" width="200">
+<img src="https://github.com/patrick-3008/To-do-app/assets/121394398/cb891842-ecba-43e5-9c13-ce8f4e6cc3fd" width="200">
+<img src="https://github.com/patrick-3008/To-do-app/assets/121394398/5287f96d-6483-4cda-a603-cf889a89790d" width="200">
 
 # Features:
 
