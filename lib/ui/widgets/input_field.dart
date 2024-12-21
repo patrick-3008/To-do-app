@@ -27,7 +27,7 @@ class InputField extends StatelessWidget {
         children: [
           Text(title, style: titleStyle),
           Container(
-            padding: const EdgeInsets.only(left:14),
+            padding: const EdgeInsets.only(left: 14),
             margin: const EdgeInsets.only(top: 8),
             width: SizeConfig.screenWidth,
             height: 52,
@@ -49,17 +49,13 @@ class InputField extends StatelessWidget {
                       hintStyle: subTitleStyle,
                       enabledBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
-                          // ignore: deprecated_member_use
-                          color: context.theme.backgroundColor,
+                          color: context.theme.scaffoldBackgroundColor,
                           width: 0,
                         ),
                       ),
                       focusedBorder: UnderlineInputBorder(
-                        borderSide:
-                            // ignore: deprecated_member_use
-                            BorderSide(
-                          // ignore: deprecated_member_use
-                          color: context.theme.backgroundColor,
+                        borderSide: BorderSide(
+                          color: context.theme.scaffoldBackgroundColor,
                           width: 0,
                         ),
                       ),

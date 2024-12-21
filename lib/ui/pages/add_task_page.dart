@@ -33,8 +33,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // ignore: deprecated_member_use
-      backgroundColor: context.theme.backgroundColor,
+      backgroundColor: context.theme.scaffoldBackgroundColor,
       appBar: _appBar(),
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -188,8 +187,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
         icon: const Icon(Icons.arrow_back_ios, size: 24, color: primaryClr),
       ),
       elevation: 0,
-      // ignore: deprecated_member_use
-      backgroundColor: context.theme.backgroundColor,
+      backgroundColor: context.theme.scaffoldBackgroundColor,
       actions: const [
         CircleAvatar(
           backgroundImage: AssetImage('images/person.jpeg'),

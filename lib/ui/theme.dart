@@ -13,70 +13,72 @@ const Color darkHeaderClr = Color(0xFF424242);
 class Themes {
   static final light = ThemeData(
     primaryColor: primaryClr,
-    // ignore: deprecated_member_use
-    backgroundColor: Colors.white,
+    scaffoldBackgroundColor: Colors.white,
     brightness: Brightness.light,
   );
   static final dark = ThemeData(
     primaryColor: darkGreyClr,
-    // ignore: deprecated_member_use
-    backgroundColor: darkGreyClr,
+    scaffoldBackgroundColor: darkGreyClr,
     brightness: Brightness.dark,
   );
-
 }
 
-  TextStyle get headingStyle {
-    return GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: Get.isDarkMode ? Colors.white : Colors.black,
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-      ),
-    );
-  }
-  TextStyle get subHeadingStyle {
-    return GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: Get.isDarkMode ? Colors.white : Colors.black,
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-      ),
-    );
-  }
-  TextStyle get titleStyle {
-    return GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: Get.isDarkMode ? Colors.white : Colors.black,
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-      ),
-    );
-  }
-  TextStyle get subTitleStyle {
-    return GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: Get.isDarkMode ? Colors.white : Colors.black,
-        fontSize: 16,
-        fontWeight: FontWeight.w400,
-      ),
-    );
-  }
-  TextStyle get bodyStyle {
-    return GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: Get.isDarkMode ? Colors.white : Colors.black,
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-      ),
-    );
-  }
-  TextStyle get body2Style {
-    return GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: Get.isDarkMode ? Colors.grey[200] : Colors.black,
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-      ),
-    );
-  }
+TextStyle get headingStyle {
+  return GoogleFonts.lato(
+    textStyle: TextStyle(
+      color: Get.isDarkMode ? Colors.white : Colors.black,
+      fontSize: 24,
+      fontWeight: FontWeight.bold,
+    ),
+  );
+}
+
+TextStyle get subHeadingStyle {
+  return GoogleFonts.lato(
+    textStyle: TextStyle(
+      color: Get.isDarkMode ? Colors.white : Colors.black,
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+    ),
+  );
+}
+
+TextStyle get titleStyle {
+  return GoogleFonts.lato(
+    textStyle: TextStyle(
+      color: Get.isDarkMode ? Colors.white : Colors.black,
+      fontSize: 18,
+      fontWeight: FontWeight.bold,
+    ),
+  );
+}
+
+TextStyle get subTitleStyle {
+  return GoogleFonts.lato(
+    textStyle: TextStyle(
+      color: Get.isDarkMode ? Colors.white : Colors.black,
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+    ),
+  );
+}
+
+TextStyle get bodyStyle {
+  return GoogleFonts.lato(
+    textStyle: TextStyle(
+      color: Get.isDarkMode ? Colors.white : Colors.black,
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+    ),
+  );
+}
+
+TextStyle get body2Style {
+  return GoogleFonts.lato(
+    textStyle: TextStyle(
+      color: Get.isDarkMode ? Colors.grey[200] : Colors.black,
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+    ),
+  );
+}

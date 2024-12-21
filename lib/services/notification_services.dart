@@ -23,12 +23,12 @@ class NotifyHelper {
     _configureSelectNotificationSubject();
     await _configureLocalTimeZone();
     // await requestIOSPermissions(flutterLocalNotificationsPlugin);
-    final IOSInitializationSettings initializationSettingsIOS =
-        IOSInitializationSettings(
+    final DarwinInitializationSettings initializationSettingsIOS =
+        DarwinInitializationSettings(
       requestSoundPermission: false,
       requestBadgePermission: false,
       requestAlertPermission: false,
-      onDidReceiveLocalNotification: onDidReceiveLocalNotification,
+      // onDidReceiveLocalNotification: onDidReceiveLocalNotification,
     );
     const AndroidInitializationSettings initializationSettingsAndroid =
         AndroidInitializationSettings('launch_background');
@@ -40,11 +40,11 @@ class NotifyHelper {
     );
     await flutterLocalNotificationsPlugin.initialize(
       initializationSettings,
-      onSelectNotification: (String? payload) async {
+      onDidReceiveNotificationResponse: (NotificationResponse? payload) async {
         if (payload != null) {
-          debugPrint('notification payload: ' + payload);
+          debugPrint('notification payload: ' + payload.toString());
         }
-        selectNotificationSubject.add(payload!);
+        selectNotificationSubject.add(payload.toString());
       },
     );
   }
@@ -52,9 +52,9 @@ class NotifyHelper {
   displayNotification({required String title, required String body}) async {
     print('doing test');
     var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
-        'your channel id', 'your channel name', 'your channel description',
+        'your channel id', 'your channel name',
         importance: Importance.max, priority: Priority.high);
-    var iOSPlatformChannelSpecifics = const IOSNotificationDetails();
+    var iOSPlatformChannelSpecifics = const DarwinNotificationDetails();
     var platformChannelSpecifics = NotificationDetails(
         android: androidPlatformChannelSpecifics,
         iOS: iOSPlatformChannelSpecifics);
@@ -84,14 +84,15 @@ class NotifyHelper {
       _nextInstanceOfTenAM(
           hour, minutes, task.remind!, task.repeat!, task.date!),
       const NotificationDetails(
-        android: AndroidNotificationDetails(
-            'your channel id', 'your channel name', 'your channel description'),
+        android:
+            AndroidNotificationDetails('your channel id', 'your channel name'),
       ),
-      androidAllowWhileIdle: true,
+      // androidAllowWhileIdle: true,
       uiLocalNotificationDateInterpretation:
           UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents: DateTimeComponents.time,
       payload: '${task.title}|${task.note}|${task.startTime}|',
+      androidScheduleMode: AndroidScheduleMode.exact,
     );
   }
 
@@ -120,7 +121,7 @@ class NotifyHelper {
         scheduledDate = tz.TZDateTime(tz.local, now.year,
             (formattedDate.month) + 1, formattedDate.day, hour, minutes);
       }
-    scheduledDate = afterRemind(remind, scheduledDate);
+      scheduledDate = afterRemind(remind, scheduledDate);
     }
     print('next scheduledDate = $scheduledDate');
 

@@ -36,15 +36,13 @@ class _HomePageState extends State<HomePage> {
   }
 
   final TaskController _taskController = Get.put(TaskController());
-  // ignore: unused_field
   DateTime _selectedDate = DateTime.now();
 
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-      // ignore: deprecated_member_use
-      backgroundColor: context.theme.backgroundColor,
+      backgroundColor: context.theme.scaffoldBackgroundColor,
       appBar: _appBar(),
       body: Column(
         children: [
@@ -70,8 +68,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       elevation: 0,
-      // ignore: deprecated_member_use
-      backgroundColor: context.theme.backgroundColor,
+      backgroundColor: context.theme.scaffoldBackgroundColor,
       actions: [
         IconButton(
           icon: const Icon(

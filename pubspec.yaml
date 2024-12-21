@@ -19,9 +19,9 @@ dependencies:
   date_picker_timeline: ^1.2.3
   sqflite: ^2.3.0
   flutter_staggered_animations: ^1.0.0
-  flutter_svg: ^0.22.0
+  flutter_svg: ^2.0.16
   rxdart: ^0.27.2
-  flutter_local_notifications: ^8.2.0
+  flutter_local_notifications: ^18.0.1
   flutter_timezone: ^1.0.7
 
 
