@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:to_do_app/db/db_helper.dart';
+import 'package:to_do_app/core/db/db_helper.dart';
 
-import '../models/task.dart';
+import '../../features/add_task/data/models/task.dart';
 
 class TaskController extends GetxController {
   final RxList<Task> taskList = <Task>[].obs;

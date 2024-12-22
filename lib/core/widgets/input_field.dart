@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:to_do_app/core/theme.dart';
 
-import '/ui/size_config.dart';
-import '/ui/theme.dart';
+import '../../core/size_config.dart';
 
 class InputField extends StatelessWidget {
   const InputField({

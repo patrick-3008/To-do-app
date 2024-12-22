@@ -7,8 +7,8 @@ import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-import '/models/task.dart';
-import '/ui/pages/notification_screen.dart';
+import '../../features/add_task/data/models/task.dart';
+import '../../features/notifications/presentation/view/notification_screen.dart';
 
 class NotifyHelper {
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =

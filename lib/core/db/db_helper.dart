@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 
-import '../models/task.dart';
+import '../../features/add_task/data/models/task.dart';
 
 class DBHelper {
   static Database? _db;

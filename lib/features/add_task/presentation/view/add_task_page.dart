@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:to_do_app/ui/theme.dart';
-import 'package:to_do_app/ui/widgets/button.dart';
-import '../../models/task.dart';
-import '../widgets/input_field.dart';
-import '/controllers/task_controller.dart';
+import 'package:to_do_app/core/controllers/task_controller.dart';
+import 'package:to_do_app/core/theme.dart';
+import 'package:to_do_app/core/widgets/custom_button.dart';
+import 'package:to_do_app/core/widgets/input_field.dart';
+import 'package:to_do_app/features/add_task/data/models/task.dart';
 
 class AddTaskPage extends StatefulWidget {
   const AddTaskPage({Key? key}) : super(key: key);
@@ -165,7 +165,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   _colorPalette(),
-                  MyButton(
+                  CustomButton(
                     label: 'Create Task',
                     onTap: () {
                       _validateDate();

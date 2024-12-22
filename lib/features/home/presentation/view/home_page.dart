@@ -5,16 +5,15 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-
-import '../../controllers/task_controller.dart';
-import '../../models/task.dart';
-import '../../services/notification_services.dart';
-import '../../services/theme_services.dart';
-import '../size_config.dart';
-import '../theme.dart';
-import '../widgets/button.dart';
-import '../widgets/task_tile.dart';
-import 'add_task_page.dart';
+import 'package:to_do_app/core/controllers/task_controller.dart';
+import 'package:to_do_app/core/services/notification_services.dart';
+import 'package:to_do_app/core/services/theme_services.dart';
+import 'package:to_do_app/core/size_config.dart';
+import 'package:to_do_app/core/theme.dart';
+import 'package:to_do_app/core/widgets/custom_button.dart';
+import 'package:to_do_app/core/widgets/task_tile.dart';
+import 'package:to_do_app/features/add_task/data/models/task.dart';
+import 'package:to_do_app/features/add_task/presentation/view/add_task_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -106,7 +105,7 @@ class _HomePageState extends State<HomePage> {
               Text('Today', style: headingStyle),
             ],
           ),
-          MyButton(
+          CustomButton(
             label: '+ Add Task',
             onTap: () async {
               await Get.to(() => const AddTaskPage());
