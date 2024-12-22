@@ -233,7 +233,7 @@ class _HomePageState extends State<HomePage> {
                       : const SizedBox(height: 220),
                   SvgPicture.asset(
                     'images/task.svg',
-                    color: primaryClr.withOpacity(0.5),
+                    colorFilter: ColorFilter.mode(primaryClr, BlendMode.srcIn),
                     height: 90,
                     semanticsLabel: 'Task',
                   ),

@@ -84,7 +84,7 @@ class TaskTile extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 10),
               height: 60,
               width: 0.5,
-              color: Colors.grey[200]!.withOpacity(0.7),
+              color: Colors.grey[200]!,
             ),
             RotatedBox(
               quarterTurns: 3,
